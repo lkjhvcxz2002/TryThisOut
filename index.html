@@ -2,9 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Ex01</title>
+<link rel="stylesheet"
+		href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<!-- <script src="js/jquery.min.js"></script> -->
+<!-- <script src="js/jquery-ui.js"></script> -->
 </head>
 <body>
-  <h1>Hello World</h1>
+	<h1>Hello World!</h1>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript"> 
+ 	$(document).ready(function(){
+ 		var h1Style = {color:"blue",width:"200px"}
+ 		$('h1').css(h1Style).draggable().mouseover(function(){$(this).css("color","green")}).mouseout(function(){$(this).css("color","blue")});
+ 	});
+</script>
 </body>
 </html>
